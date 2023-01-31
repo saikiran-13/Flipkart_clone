@@ -1,0 +1,581 @@
+html {
+    font-size: 10px;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*======================================================================================================================================*/
+/*Header part*/
+header {/*Header begins here*/
+    background-color: #2874f0;
+    display: flex;
+    align-items: center;
+    height: 3.67vw;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.flipkart-container {/*Flipkart container containing flipkart logo*/
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 3vw;
+    width: 5vw;
+    flex: 2;
+}
+
+.flipkart {/*Flipkart logo*/
+    max-height: 100%;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.searchbox {/*Search container containing searchbar and search_icon*/
+    display: flex;
+    align-items: center;
+    flex: 12;
+}
+
+.search {/*searchbar container*/
+    width: 100%;
+    height: 2.4vw;
+    border: none;
+    outline: none;
+    width: 32vw;
+    border-bottom-left-radius: 0.13vw;
+    border-top-left-radius: 0.13vw;
+    padding: 1vw;
+    font-size: 0.9vw;
+    font-weight: 400;
+}
+
+.glass {/*search_icon container*/
+    border-top: 0.07vw solid #fff;
+    border-right: 0.07vw solid #fff;
+    border-bottom: 0.07vw solid #fff;
+    background-color: #fff;
+    height: 2.4vw;
+    width: 3.43vw;
+    cursor: pointer;
+    padding: 0.46vw 1vw 0.1vw 0.7vw;
+    border-top-right-radius: 0.13vw;
+    border-bottom-right-radius: 0.13vw;
+}
+
+.login {/*Login button container*/
+    cursor: pointer;
+    font-size: 1vw;
+    letter-spacing: .1px;
+    font-weight: 500;
+    color: #2874f0;
+    width: 9.4vw;
+    height: 2.2vw;
+    text-align: center;
+    background-color: #fff;
+    flex: 2.5;
+    border: none;
+    border-radius: 1px;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 600;
+}
+
+.more {/*more container*/
+    cursor: pointer;
+    max-width: 11.7vw;
+    height: 2.6vw;
+    align-items: center;
+    display: flex;
+    flex: 2;
+}
+
+.more:hover .dropdown{
+    display: block;
+}
+.dropdown{
+    position: relative;
+    top:2.8vw;
+    right:9.4vw;
+}
+.none{
+    display: none;
+}
+
+.list{
+    position: absolute;
+    background-color: #fff;
+    width:max-content;
+    box-shadow: 0 4px 16px 0 rgb(0 0 0/20%);
+    min-width:20.6vw;
+    transform: translate(2.35vw);
+}
+.list li{
+    padding:1vw;
+    border-bottom:1px solid #f0f0f0;
+    font-size:1.5vw;
+    cursor:pointer;
+}
+.list li i{
+    padding-right: 1vw;
+}
+
+
+
+.moretxt {/*"More" text inside more container*/
+    text-align: right;
+    color: white;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1vw;
+    letter-spacing: .1px;
+    font-weight: 600;
+    padding-right: 0px;
+    padding-left: 0.5vw;
+    flex: 3;
+}
+
+.drop {/*drop container containing drop icon*/
+    transform: rotate(270deg);
+    width: 1.2vw;
+    height: 0.6vw;
+    padding-left: 0px;
+    flex: 1;
+
+}
+
+.drop:hover {/*hover effect of dropdown button*/
+    transform: rotate(90deg);
+}
+
+
+.cart {/*Cart container*/
+    cursor: pointer;
+    color: white;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 1vw;
+    letter-spacing: .1px;
+    align-items: center;
+    text-align: center;
+    padding-right: 0px;
+    flex: 2;
+}
+
+.cart svg {/*Cart icon*/
+    width: 1.1vw;
+    height: 1.1vw;
+}
+
+/*========================================================================================================================================*/
+nav {/*Nav container contains a bunch of categories in flipkart*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 0.07vw solid rgba(68, 68, 68, 0.527);
+    width: 100vw;
+}
+
+nav div {/*Each divison inside nav container*/
+    display: flex;
+    flex: 0.8;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav div img {/*Each image inside division of nav container*/
+    margin-top: 0.3vw;
+    height: 4.2vw;
+    width: 5vw;
+    cursor: pointer;
+}
+
+nav div p {/*Each category name inside divison of nav container*/
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 0.79vw;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0.5vw;
+    margin-bottom: 1vw;
+}
+
+nav div p:hover {/*hover effect*/
+    color: #2874f0;
+    cursor: pointer;
+}
+
+/*=========================================================================================================================================*/
+section {/*Section parts starts here mainly divided into two Containers*/
+    background-color: rgb(232, 232, 240);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+
+}
+
+.cont {/*Container1*/
+    display: flex;
+    padding: 1.56vw;
+    padding-left: 6.25vw;
+    padding-right: 6.25vw;
+    flex: 1;
+}
+
+.finaldeal {/*subcontainer1 of container1*/
+    background-color: white;
+    flex: 4;
+    height: 20vw;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+/*Here divison1 and divison2 are vertical divisons of subcontainer1*/
+.deal {/*Divison1 of subcontainer1*/
+    display: flex;
+    border-bottom: solid 0.07vw rgba(199, 199, 199, 0.5);
+    justify-content: center;
+    padding-right: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    width: 73.7vw;
+    height: 4.5vw;
+
+}
+
+.h2 {/*Main heading used in divison 1 of subcontainer1 of container1 and container2*/
+    flex: 2;
+    display: inline;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.3vw !important;
+    padding-top: 0.2vw;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    justify-content: center;
+    
+}
+
+.clock-container {/*Clock container of division 1*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.5;
+}
+
+.clock {/*Clock icon*/
+    height: 1.56vw;
+    width: 1.56vw;
+    cursor: pointer;
+}
+
+#dealtimer {/*Timer created using javascript in divison1*/
+    font-size: 1vw;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: bold;
+    color: grey;
+    margin-left: 0px;
+    text-align: center;
+    flex: 1.3;
+    padding-top: 0.5vw;
+}
+
+button {/*Button styling used for login,view all in container1  and container2*/
+    cursor:pointer;
+    font-weight: 500;
+    width: 7.81vw;
+    height: 2.57vw;
+    text-align: center;
+    border: none;
+    border-radius: 1px;
+    font-family: Roboto, Arial, sans-serif;
+    background-color: #2874f0;
+    color: white;
+    box-shadow: 0.07vw 0.07vw rgba(116, 116, 116, 0.7);
+    flex: 1;
+   
+}
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+.extradeal {/*Divison2 of subcontainer1*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 73.7vw;
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+    overflow: auto;
+}
+
+.extradeal div {/*Division2 id divided into subdivisions*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 13vw;
+}
+
+.extradeal div img {/*images of subdivison*/
+    height:7.5vw;
+    width: 7.5vw;
+    cursor: pointer;
+}
+
+.extradeal div img:hover {/*Hover effect*/
+    height: 8.3vw;
+    width: 8.3vw;
+}
+/*------------------------------------------------------------------------------------------------------------------------------*/
+.adv {/*Advertisement container i.e., Subcontainer2 of Container1*/
+    flex: 1;
+    margin-left: 0.5vw;
+    max-height: 100%;
+    cursor: pointer;
+    height:20vw;
+}
+
+.adv-cont {/*Advertisement image*/
+    height: 20vw;
+}
+
+/*################################################################################################################################*/
+.cont2 {/*Container 2*/
+    padding: 1.56vw;
+    padding-left: 6.25vw;
+    padding-right: 6.25vw;
+    width: 100vw;
+    flex: 1;
+    margin-bottom: 1vw;
+    padding-top: 0;
+}
+
+.stock {/*subcontainer1 inside container 2*/
+    display: flex;
+    text-align: left;
+    border-bottom: solid 1px rgba(199, 199, 199, 0.5);
+    background-color: white;
+    padding: 0.78vw 1vw 1vw 0vw;
+}
+/*Here division1 and divison2 are horizontal divisons inside subcontainer1 */
+.finalblock {/*Division 1 contains starting 2 texts of subcontainer1*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0.2;
+}
+
+.last {/*Divison 2 takes remaining space for "view all" button of subcontainer1*/
+    flex: auto;
+}
+
+.shop {/*Shop now text inside the "finalblock" division */
+    font-size: 0.9vw;
+    margin-top: 0.5vw;
+    padding-left: 1vw;
+    font-family: Roboto, Arial, sans-serif;
+    color: grey;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+.sale {/*subcontainer2 inside container2*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+}
+
+.sale div {/*Each division inside the subcontainer2*/
+    text-align: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 13vw;
+}
+
+.sale div img {/*Each image present in the division*/
+    height: 7.5vw;
+    width: 7.5vw;
+    cursor: pointer;
+}
+
+.sale div img:hover {/*Hover effect*/
+    height: 8.3vw;
+    width: 8.3vw;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+.p1,.p2,.p3{/*paragraph tags used below images*/
+    text-align: center;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 0.9vw;
+    margin-bottom: 0;
+    cursor: pointer;
+    flex: 1;
+}
+.p1 {/*product name */
+    font-weight: bold;
+    margin-top: 1vw;
+}
+
+.p2 {/*Price*/
+    color: green;
+}
+
+.p3 {/*Brand name*/
+    color: rgba(199, 199, 199, 1);
+}
+/*=======================================================================================================================================*/
+/*media queries*/
+@media only screen and (max-width:800px) and (min-width:300px){
+        
+    .left_space{
+        display: none;
+    }
+    .right-space{
+       display: none;
+    }
+    nav div{
+        flex:1;
+    }
+
+    .nav div img {
+        margin-top: 0.2vw;
+        height: 5vw;
+        width: 6vw;
+        
+    }
+
+ }
+ @media only screen and (max-width:1150px) and (min-width:800px){
+    .extradeal,.sale{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow: auto;
+    }
+    .extradeal div,.sale div{
+        width:80px;
+        padding:5px;
+    }
+    .extradeal div img,.sale div img{
+        width:68px;
+      
+    }
+ }
+ @media only screen and (max-width:800px) and (min-width:450px){
+    .extradeal,.sale{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow: auto;
+    }
+    .extradeal div,.sale div{
+        width:70px;
+        padding:5px;
+    }
+    .extradeal div img,.sale div img{
+        width:58px;
+      
+    }
+ }
+
+ @media only screen and (max-width:450px) and (min-width:350px){
+    .extradeal,.sale{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow: auto;
+    }
+    .extradeal div,.sale div{
+        width:65px;
+        padding:3px;
+    }
+    .extradeal div img,.sale div img{
+        width:48px;
+      
+    }
+ }
+
+ @media only screen and (max-width:350px) and (min-width:250px){
+    .extradeal,.sale{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow: auto;
+    }
+    .extradeal div,.sale div{
+        width:55px;
+        padding:2px;
+    }
+    .extradeal div img,.sale div img{
+        width:40px;
+      
+    }
+ }
+
+ @media only screen and (max-width:250px) and (min-width:150px){
+    .extradeal,.sale{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow: auto;
+    }
+    .extradeal div,.sale div{
+        width:45px;
+        padding:2px;
+    }
+    .extradeal div img,.sale div img{
+        width:25px;
+      
+    }
+ }
+
+
+/*====================================================================================================================================================*/
+/*Space Blocks*/
+.space1 {
+    flex: 5;
+}
+
+.space2 {
+    flex: 0.3;
+}
+
+.space3 {
+    flex: 3.5;
+}
+
+.space4 {
+    flex: 0.3;
+}
+
+.space5 {
+    flex: 0.3;
+}
+
+.space6 {
+    flex: 5;
+}
+
+.left_space {
+    flex: 1;
+}
+
+.right-space {
+    flex: 1;
+}
+
+.large {
+    flex: 7;
+}
+
+/*==================================================THE END======================================================================================================*/
